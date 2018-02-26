@@ -1,0 +1,18 @@
+E:\Programming Stuff\MS.NET Stuff\C#\Apps\Transmission\Node B\Node B\bin\Debug\Node B.exe
+E:\Programming Stuff\MS.NET Stuff\C#\Apps\Transmission\Node B\Node B\bin\Debug\Node B.pdb
+E:\Programming Stuff\MS.NET Stuff\C#\Apps\Transmission\Node B\Node B\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Programming Stuff\MS.NET Stuff\C#\Apps\Transmission\Node B\Node B\obj\x86\Debug\Node_B.Node_B.resources
+E:\Programming Stuff\MS.NET Stuff\C#\Apps\Transmission\Node B\Node B\obj\x86\Debug\Node_B.Properties.Resources.resources
+E:\Programming Stuff\MS.NET Stuff\C#\Apps\Transmission\Node B\Node B\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Programming Stuff\MS.NET Stuff\C#\Apps\Transmission\Node B\Node B\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Programming Stuff\MS.NET Stuff\C#\Apps\Transmission\Node B\Node B\obj\x86\Debug\Node B.exe
+E:\Programming Stuff\MS.NET Stuff\C#\Apps\Transmission\Node B\Node B\obj\x86\Debug\Node B.pdb
+D:\govind\projects\ms.net\own\Transmission\Node B\Node B\obj\x86\Debug\Node B.exe
+D:\govind\projects\ms.net\own\Transmission\Node B\Node B\obj\x86\Debug\Node B.pdb
+D:\govind\projects\ms.net\own\Transmission\Node B\Node B\bin\Debug\Node B.exe
+D:\govind\projects\ms.net\own\Transmission\Node B\Node B\bin\Debug\Node B.pdb
+D:\govind\projects\ms.net\own\Transmission\Node B\Node B\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\govind\projects\ms.net\own\Transmission\Node B\Node B\obj\x86\Debug\Node_B.Node_B.resources
+D:\govind\projects\ms.net\own\Transmission\Node B\Node B\obj\x86\Debug\Node_B.Properties.Resources.resources
+D:\govind\projects\ms.net\own\Transmission\Node B\Node B\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\govind\projects\ms.net\own\Transmission\Node B\Node B\obj\x86\Debug\GenerateResource.write.1.tlog

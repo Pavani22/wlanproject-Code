@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            display: block;
+            float: left;
+            text-align: left;
+            width: auto;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form runat="server">
+        <div class="page">
+            <div class="header">
+                <div class="style1">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    Wired Equivalent Privacy For WLAN Security</div>
+                <div class="clear hideSkiplink">
+                    <center>
+                        <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
+                            IncludeStyleBlock="false" Orientation="Horizontal">
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
+                                <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" />
+                                <asp:MenuItem NavigateUrl="~/AUsers.aspx" Text="Authenticate Nodes" />
+                                <asp:MenuItem NavigateUrl="~/PA.aspx" Text="Provide Access" />
+                                <asp:MenuItem NavigateUrl="~/ChPwd.aspx" Text="Change Password" />
+                                <asp:MenuItem NavigateUrl="~/Logout.aspx" Text="Logout" />
+                            </Items>
+                        </asp:Menu>
+                    </center>
+                </div>
+            </div>
+            <div class="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+        </form>
+    </center>
+</body>
+</html>

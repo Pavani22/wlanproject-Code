@@ -1,0 +1,52 @@
+create table info(
+     src varchar(max),
+     cipher varchar(max),
+     dataKey  varchar(max),
+     dest varchar(max));
+
+create table nodes(
+   mac  varchar(50) constraint nodes_mac_pk primary key,
+   ip   varchar(50) constraint nodes_mac_u  unique,
+   node varchar(50),
+   auth varchar(max) default 'n' constraint nodes_auth_chk check(auth in('y','n'))
+);
+create table admin(
+    uname varchar(50),
+	pwd varchar(50)
+);
+insert into admin(uname,pwd) values('admin','admin');
+=====================================================================================================================================================================
+
+
+ con.Open();
+                SqlTransaction trans = con.BeginTransaction();
+                try
+                {
+                    String delete = "delete info";
+                    String insert = "insert into info(src,cipher,datakey,dest)values(@src,@cipher,@dataKey,@dest)";
+                    SqlCommand cmd = new SqlCommand(delete, con);
+                    cmd.Transaction = trans;
+                    cmd.ExecuteNonQuery();
+                    cmd = new SqlCommand(insert, con);
+                    cmd.Transaction = trans;
+                    cmd.Parameters.AddWithValue("@src", this.source);
+                    cmd.Parameters.AddWithValue("@cipher", this.cipher);
+                    cmd.Parameters.AddWithValue("@dataKey", this.key);
+                    cmd.Parameters.AddWithValue("@dest", this.dest);
+                    cmd.ExecuteNonQuery();
+                    trans.Commit();
+                    MessageBox.Show("Data Sent Successfully.......");
+                }
+                catch (Exception ex)
+                {
+                    trans.Rollback();
+                    MessageBox.Show("Failure in DataSending  " + ex.Message + "=======>  " + ex.StackTrace);
+                }
+                finally
+                {
+                    if (con != null)
+                    {
+                        con.Close();
+                    }
+                }
+

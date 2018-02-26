@@ -1,0 +1,20 @@
+create table info(
+     src varchar(max),
+     cipher varchar(max),
+     dataKey  varchar(max),
+     dest varchar(max));
+
+create table nodes(
+   mac  varchar(50) constraint nodes_mac_pk primary key,
+   ip   varchar(50) constraint nodes_mac_u  unique,
+   node varchar(50),
+   auth varchar(1) default 'n' constraint nodes_auth_chk check(auth in('y','n'))
+);
+create table admin(
+    uname varchar(50),
+	pwd varchar(50)
+);
+insert into admin(uname,pwd)values('admin','admin')
+=====================================================================================================================================================================
+
+ 
